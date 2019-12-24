@@ -3,4 +3,4 @@ RUN echo http:"//dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
   apk update && apk upgrade && apk add \
   rust cargo && cargo install spooks 
 ENV PATH "$PATH:/root/.cargo/bin"
-ENTRYPOINT ["/root/.cargo/spooks"]
+ENTRYPOINT ["/root/.cargo/bin/spooks"]
